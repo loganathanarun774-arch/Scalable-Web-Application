@@ -1,16 +1,54 @@
-# React + Vite
+# 🚀 Scalable Task Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, high-performance task management application built with **React 19**, **Vite**, and **Tailwind CSS 4**. This project features a stunning glassmorphic dark-themed UI, providing a seamless and productive experience for managing projects and personal tasks.
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🔐 Secure Authentication**: Full Login and Registration flow with form validation powered by `zod` and `react-hook-form`.
+- **📊 Interactive Dashboard**: A centralized hub to visualize, search, and filter tasks by status (Todo, In-Progress, Completed).
+- **📝 Complete Task Management**: Full CRUD capabilities—create, view, edit, and delete tasks with instant UI updates.
+- **🎨 Premium UI/UX**: 
+  - **Glassmorphism**: Modern frosted-glass components and backdrop blurs.
+  - **Dark Mode**: A refined, eye-pleasing dark aesthetic from the start.
+  - **Fluid Animations**: Smooth transitions and layout shifts powered by `framer-motion`.
+- **👤 Profile Management**: Dedicated user profiles to manage personal information.
+- **💾 Persistent State**: Leverages `localStorage` with a service-based architecture for data persistence across sessions.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) (with PostCSS)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Forms & Validation**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Routing**: [React Router DOM](https://reactrouter.com/)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Run in development mode**:
+   ```bash
+   npm run dev
+   ```
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+## 🏗️ Architecture
+
+The app follows a modular architecture:
+- `/components`: Reusable UI elements like the glassmorphic `Sidebar`.
+- `/context`: Global state management for Authentication.
+- `/pages`: Main view components (Dashboard, Login, Profile).
+- `/services`: Abstraction layer for API calls and data persistence logic.
+
+
